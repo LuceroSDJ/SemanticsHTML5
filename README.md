@@ -33,26 +33,26 @@ In the example above, <div> tags serve only as text holders. On the other hand, 
 </html>
 ```
 
-## Understanding <head> tag
-``
+## Understanding *<head>* tag
+```
 <head>
     <meta charset="UTF-8">
-``
+```
         UTF-8 (U from Universal Character Set + Transformation Format—8-bit) 
         is a character encoding capable of encoding all possible characters 
         (called code points) in Unicode. The encoding is variable-length and uses 8-bit code units.
-``
+```
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
-``
+```
         HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.
         A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
 
-``
+```
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-``   
+```  
         The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as. 
         If you need to support IE9 or IE8, then it is recommended to the tag. -Stack overflow
-``
+```
     <title>Document</title>
 </head>
-``
+```
