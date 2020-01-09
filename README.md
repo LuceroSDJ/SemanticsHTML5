@@ -33,7 +33,7 @@ In the example above, <div> tags serve only as text holders. On the other hand, 
 </html>
 ```
 
-## Understanding *<head>* tag
+## Understanding head tag
 ```
 <head>
     <meta charset="UTF-8">
