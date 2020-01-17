@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-do List</title>
+    <style>
+        img{height: 200px;
+            width: 200px;
+            }
+    </style>
+</head>
+<body>
+<!-- ** create and append elements to existing elements ** -->
+<!-- to do list based on user input-->
+<label>To do</label>
+<input type="text" id="item"/>
+<!-- add onclick attribute to button so function is called when clicked-->
+<button onclick="addItem()">Add Item</button>
+
+<div>
+    <ul id="myList">
+
+    </ul>
+</div>
+
+<div>
+    <!-- ** changing element attributes **
+    replace image src -->
+    <img id="myImg" src="images/rain.jpg"/>
+    <button onclick="changeImg()">Change Image</button>
+</div>
+
+<div>
+    <!-- ** changing an element style ** -->
+    <h1 id="dynamicHeading">Changing an Element Style</h1>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <button onclick="changeColor('green')">Green</button>
+</div>
+
+<script>
+// this function creates a new item
+function addItem() {
+    var userInput = document.getElementById("item").value;
+    // use create element to generate a new <li> tag
+    var listItem = document.createElement("li");
+    // append user input to the new <li> tag using innerHTMl
+    listItem.innerHTML = userInput;
+    console.log(listItem.innerHTML = userInput);
+    //appending content using appendChild method. This method does not replace the content. It just add to it.
+    document.getElementById("myList").appendChild(listItem);
+    // reset value of input box
+    document.getElementById("item").value = "next item";
+}
+
+
+// ** changing element attributes **
+function changeImg() {
+    document.getElementById("myImg").src = "images/sun.jpg";
+}
+
+// <!-- ** changing an element style ** -->
+// pass in argument to change color 
+function changeColor(clr){
+    document.getElementById("dynamicHeading").style.color = clr;
+}
+
+
+
+</script>
+
+<!-- <script type="text/javascript" src="toDo.js"></script>    -->
+</body>
+</html>

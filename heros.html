@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice JS</title>
+</head>
+<body>
+
+
+<script>
+// create set of arrays containing sentence fragments
+var adjectives = ["The amazing ", "The incredible", "The fantastic"];
+var names = ["Avenger ", "Captain America", "Hulk"];
+var powers = ["can fly!", "can save the day!", "can make you smile!"];
+
+// function generates a random number between 0 and 2
+function randomNum() {
+    var num = Math.round(Math.random() * 2);
+    return num;
+}
+
+function generateHero() {
+    // construct sentence and store in a variable
+    var hero = adjectives[randomNum()] + " " + names[randomNum()] + " " + powers[randomNum()];
+    alert(hero);
+}
+
+// call function
+generateHero();
+</script>
+</body>
+</html>

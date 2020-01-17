@@ -12,7 +12,7 @@ button.onclick = function () {
     alert("You clicked " + myNum + " times.");
 }
 
-// READING VALUES: print user input in the console
+// ** READING VALUES: print user input in the console **
 // grab reference to Enter button:
 var button = document.getElementById("submit");
 // attach onclick event to button & construct function using .value method:
@@ -23,7 +23,7 @@ button.onclick = function () {
     alert(passInput);
 }
 
-// ANALYZING INPUTS:
+// ** ANALYZING INPUTS: **
 // grab reference to button & store it in a variable:
 var button2 = document.getElementById("submit2");
 // store expected password in a variable:
@@ -41,3 +41,13 @@ button2.onclick = function () {
     }
 }
     
+
+// ** Practice Code: Manipulating the DOM **
+// set a dynamic title
+var date = new Date();
+var year = date.getFullYear();
+document.title = "its " + year;
+
+var newContent = "<h1>Dynamic Heading Replaced Body Content</h1>";
+document.body.innerHTML = newContent;
+ 
