@@ -70,3 +70,9 @@ Note: (review statement) If you need to support IE9 or IE8, then it is recommend
     <title>Document</title>
 </head>
 ```
+
+### Setting my footer to the bottom of the page
+I tried footer{position: absolute} & footer{position: fixed} and fixed position seemed to work as expected. Please watch the following short videos to see the difference.
+[Footer{position_ absolute; bottom_ 0}](https://drive.google.com/file/d/1jlzEWvFn9utxMmu80iBTcKdZbknYfGll/view)
+
+[footer{position:fixed} final](https://drive.google.com/file/d/1_rMiqg9P0wfiNFF88ilhX1GtW9v8kOHM/view)
